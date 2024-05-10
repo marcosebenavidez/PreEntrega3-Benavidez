@@ -1,0 +1,479 @@
+/*Tipografías
+ font-family: "Lato", sans-serif;
+ font-family: "Cabin", sans-serif;
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.isologo-misceláneas {
+    margin: 10px;
+}
+
+/*-- Nav --*/
+nav {
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px 2px #80808033;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px;
+
+}
+
+nav li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #009cff;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+/*-- Main Index --*/
+main {
+    padding: 30px 0;
+}
+
+.articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articulos div{
+    background-color: #FFF;
+}
+
+.articulos a {
+    padding: 7px 11px 6px;
+    vertical-align: top;
+    font-size: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 155px;
+    left: 20px;
+}
+
+.articulos a:hover {
+    background: #FFF;
+    color: #111111;
+}
+
+.articulos img {
+    width: 400px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.articulos h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.articulos p {
+    color: #747474;
+}
+
+.articulo-1,
+.articulo-2,
+.articulo-3,
+.articulo-4,
+.articulo-5,
+.articulo-6,
+.articulo-7,
+.articulo-8,
+.articulo-9,
+.articulo-10,
+.articulo-11,
+.articulo-12,
+.estrategias-1,
+.estrategias-2,
+.estrategias-3,
+.estrategias-4,
+.estrategias-5,
+.estrategias-6,
+.entrevista-1,
+.entrevista-2,
+.entrevista-3,
+.entrevista-4,
+.entrevista-5,
+.entrevista-6 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 1px 1px 5px 2px #80808033;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+/* -- GRID DATOS ARTICULO -- */
+.datos-articulo {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "autor autor"
+        "fecha tiempo"
+        "boton boton"
+    ;
+    width: 400px;
+    padding: 0 10px;
+}
+
+.titulo-articulo {
+    grid-area: titulo;
+}
+
+.autor-articulo {
+    grid-area: autor;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.fecha-articulo {
+    grid-area: fecha;
+    padding-top: 10px;
+    width: 5px;
+}
+
+.fecha-articulo,
+.tiempo-articulo p {
+    font-style: italic;
+}
+
+.tiempo-articulo {
+    grid-area: tiempo;
+    padding-top: 10px;
+}
+
+.boton-articulo {
+    display: flex;
+    justify-content: center;
+    grid-area: boton;
+}
+
+/* .datos-articulo div{
+    border: #009cff solid 3px;
+} */
+
+.boton-card-leer {
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #3792cf;
+    color: white;
+    cursor: pointer;
+}
+
+.boton-subir button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    font-size: 30px;
+    color: #FFF;
+    background-color: #009cff;
+    cursor: pointer;
+}
+
+/* -- Main Quienes Somos -- */
+.main-quienes-somos {
+    display: flex;
+    justify-content: center;
+}
+
+.section-quienes-somos {
+    background-color: #FFF;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px 2px #80808033;
+    border-radius: 10px;
+    padding: 10px 50px 50px;
+    margin: 0 200px;
+}
+
+.section-quienes-somos h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.section-quienes-somos img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.quienes-somos-parrafo {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgb(75, 75, 75);
+    margin: 0 0 30px;
+    max-width: 1280px;
+}
+
+/* -- Main Estrategias Didácticas -- */
+.articulos-estrategias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articulos-estrategias div{
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.articulos-estrategias img {
+    border-radius: 10px 10px 0px 0px;
+    width: 500px;
+    height: auto;
+}
+
+.articulos-estrategias h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0px 10px 10px 10px;
+}
+
+.datos-articulos-estrategias p{
+    padding: 0px 10px;
+}
+
+.articulos-estrategias a{
+    padding: 7px 11px 6px;
+    vertical-align: top;
+    font-size: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 200px;
+    left: 20px;
+}
+
+.articulos-estrategias a:hover {
+    background: #FFF;
+    color: #111111;
+}
+
+.categoria-estrategias {
+    background: #f99500;
+}
+
+/* -- Main Entrevistas -- */
+.articulos-entrevistas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articulos-entrevistas div{
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 199px;
+}
+
+.articulos-entrevistas img {
+    border-radius: 10px 10px 0px 0px;
+    max-width: 100%;
+    height: 400px;
+}
+
+.articulos-entrevistas h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0px 10px 10px 10px;
+}
+
+.datos-articulos-entrevistas p{
+    padding: 0px 10px;
+}
+
+.articulos-entrevistas a{
+    padding: 7px 11px 6px;
+    vertical-align: top;
+    font-size: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 370px;
+    left: 20px;
+}
+
+.articulos-entrevistas a:hover {
+    background: #FFF;
+    color: #111111;
+}
+
+.categoria-entrevistas {
+    background: #61c436;
+}
+
+/*-- Main Contacto --*/
+.main-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.section-contacto {
+    background-color: #FFF;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 5px 2px #80808033;
+    border-radius: 10px;
+    padding: 10px 100px 50px;
+    margin: 10px;
+}
+
+.section-contacto h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.form input,
+textarea {
+    display: block;
+    padding: 5px;
+    margin: 10px;
+}
+
+/*-- Footer --*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #111111;
+    color: #FFF;
+    padding: 30px;
+}
+
+.miscelaneas-footer div {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(2 100px);
+    align-items: center;
+    justify-items: center;
+    padding: 20px 30px;
+}
+
+.img-footer {
+    padding-bottom: 20px;
+}
+
+footer p {
+    text-align: left;
+    max-width: 350px;
+    font-size: 14px;
+}
+
+footer li {
+    display: inline-block;
+    padding: 3px;
+}
+
+footer li a {
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+footer img {
+    height: auto;
+    max-width: 100%;
+}
+
+/*-- Iconos Redes --*/
+.entypo-social--facebook-with-circle {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m2.274 6.634h-1.443c-.171 0-.361.225-.361.524V8.6h1.805l-.273 1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545v-.874c0-1.254.87-2.273 2.064-2.273h1.443z'/%3E%3C/svg%3E");
+}
+
+.entypo-social--twitter-with-circle {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m3.905 7.864c.004.082.005.164.005.244c0 2.5-1.901 5.381-5.379 5.381a5.335 5.335 0 0 1-2.898-.85c.147.018.298.025.451.025c.886 0 1.701-.301 2.348-.809a1.895 1.895 0 0 1-1.766-1.312a1.9 1.9 0 0 0 .853-.033a1.892 1.892 0 0 1-1.517-1.854v-.023c.255.141.547.227.857.237a1.89 1.89 0 0 1-.585-2.526a5.376 5.376 0 0 0 3.897 1.977a1.891 1.891 0 0 1 3.222-1.725a3.797 3.797 0 0 0 1.2-.459a1.9 1.9 0 0 1-.831 1.047a3.799 3.799 0 0 0 1.086-.299a3.834 3.834 0 0 1-.943.979'/%3E%3C/svg%3E");
+}
+
+.entypo-social--youtube-with-circle {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M11.603 9.833L9.357 8.785C9.161 8.694 9 8.796 9 9.013v1.974c0 .217.161.319.357.228l2.245-1.048c.197-.092.197-.242.001-.334M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m0 13.5c-4.914 0-5-.443-5-3.9s.086-3.9 5-3.9s5 .443 5 3.9s-.086 3.9-5 3.9'/%3E%3C/svg%3E");
+}
+
+.entypo-social--instagram-with-circle {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M13 10a3 3 0 1 1-6 0c0-.171.018-.338.049-.5H6v3.997c0 .278.225.503.503.503h6.995a.503.503 0 0 0 .502-.503V9.5h-1.049c.031.162.049.329.049.5m-3 2a2 2 0 1 0-.001-4.001A2 2 0 0 0 10 12m2.4-4.1h1.199a.301.301 0 0 0 .301-.3V6.401a.301.301 0 0 0-.301-.301H12.4a.301.301 0 0 0-.301.301V7.6c.001.165.136.3.301.3M10 .4A9.6 9.6 0 0 0 .4 10a9.6 9.6 0 0 0 9.6 9.6a9.6 9.6 0 0 0 9.6-9.6A9.6 9.6 0 0 0 10 .4m5 13.489C15 14.5 14.5 15 13.889 15H6.111C5.5 15 5 14.5 5 13.889V6.111C5 5.5 5.5 5 6.111 5h7.778C14.5 5 15 5.5 15 6.111z'/%3E%3C/svg%3E");
+}
+
+.entypo-social--linkedin-with-circle {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4M7.65 13.979H5.706V7.723H7.65zm-.984-7.024c-.614 0-1.011-.435-1.011-.973c0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973m8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355c-.537 0-.856.371-.997.728c-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01c1.279 0 2.238.857 2.238 2.699z'/%3E%3C/svg%3E");
+}
